@@ -20,4 +20,13 @@ for i in range(len(text_lines)): # Easier to do it this way so 'i' can be used a
     difference = abs(int(left_column[i]) - int(right_column[i]))
     sum += difference
 
-print(sum)
+print(f"Part 1: {sum}")
+
+similarity_score = 0
+
+for ID in left_column:
+    ID = int(ID)
+    multiplier = right_column.count(str(ID))
+    similarity_score += ID * multiplier
+
+print(f"Part 2: {similarity_score}")
