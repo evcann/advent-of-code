@@ -6,8 +6,6 @@ def determine_safety(num_list):
     ascending = False
     if num_list[0] < num_list[-1]:
         ascending = True
-    elif num_list[0] > num_list[-1]:
-        ascending = False
     else:
         return False # If the first and last number are the same, it automatically fails
     
