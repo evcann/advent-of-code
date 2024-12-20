@@ -7,8 +7,6 @@ pattern = r"mul\(\d{1,3},\d{1,3}\)" # wow scary regex
 
 mul_statements = re.findall(pattern, intext)
 
-# print(mul_statements)
-
 def mul(a, b):
     return a*b
 
