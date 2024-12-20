@@ -4,8 +4,6 @@ rows = intext.splitlines()
 
 grid = []
 
-#print(rows)
-
 for row in rows:
     row_list = []
     for letter in list(row):
@@ -44,8 +42,6 @@ def check(type):
                         total_for_type += 1
 
     return total_for_type
-
-#print(check('ur-dl'))
 
 def add_up_all():
     types = ('lr', 'du', 'ul-dr', 'ur-dl')
