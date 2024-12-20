@@ -24,9 +24,9 @@ print(f"Part 1: {sum}")
 
 similarity_score = 0
 
-for ID in left_column:
-    ID = int(ID)
-    multiplier = right_column.count(str(ID))
-    similarity_score += ID * multiplier
+for id in left_column:
+    id = int(id)
+    multiplier = right_column.count(str(id))
+    similarity_score += id * multiplier
 
 print(f"Part 2: {similarity_score}")
