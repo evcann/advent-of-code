@@ -1,4 +1,4 @@
-from copy import deepcopy
+from copy import copy
 
 infile = open("2/input.txt", 'r')
 intext = infile.read()
@@ -6,7 +6,7 @@ text_lines = intext.splitlines()
 
 def determine_safety(num_list):
     for i in range(len(num_list)):
-        num_list_copy = deepcopy(num_list)
+        num_list_copy = copy(num_list)
         num_list_copy.pop(i)
 
         ascending = False
