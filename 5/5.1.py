@@ -12,10 +12,7 @@ for rule in rules_unparsed:
 updates = []
 for update in updates_unparsed:
     string_list = update.split(',')
-    int_list = []
-    for string in string_list:
-        int_list.append(int(string))
-    updates.append(int_list)
+    updates.append(list(map(int, string_list)))
 
 passed_updates = []
 
